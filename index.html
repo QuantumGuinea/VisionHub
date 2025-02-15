@@ -5,16 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vision API Model Chaining</title>
     <link rel="stylesheet" href="./style.css" />
+    <!-- Supabase 라이브러리 -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js/dist/umd/supabase.min.js"></script>
   </head>
   <body>
     <h1>API Model Chaining</h1>
-
-    <!-- 이미지 파일 선택 -->
-    <!-- <input type="file" id="image-input" accept="image/*" /> -->
     <input type="file" id="imageInput" />
-
-    <!-- 이미지 미리보기 -->
     <div>
       <img
         id="preview"
@@ -23,12 +19,9 @@
         style="max-width: 300px"
       />
     </div>
-
-    <!-- API 호출 버튼 -->
     <button id="submitBtn">API Model Chaining</button>
-
-    <!-- 결과 출력 영역 -->
     <div id="gemini-result" class="result"></div>
+    <!-- 클라이언트 스크립트 -->
     <script src="./app.js"></script>
   </body>
 </html>
