@@ -10,8 +10,8 @@ const uuidv4 = () =>
   );
 
 // ===================== API 및 Supabase 설정 =====================
-const TOGETHER_API_KEY = "tgp_v1_w7nHHyGgN-eazFiTmmMwUw_vpva4Qfl2T4EE7JJfWVs";
-const GROQ_API_KEY = "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";
+const TOGETHER_API_KEY = "";
+const GROQ_API_KEY = "";
 
 const TOGETHER_API_ENDPOINT = "https://api.together.xyz/v1/chat/completions";
 const GROQ_API_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions";
