@@ -254,11 +254,11 @@ document.addEventListener("DOMContentLoaded", () => {
 async function uploadImageToSupabase(file) {
   const fileName = `${Date.now()}_${file.name}`;
   const { error } = await supabaseClient.storage
-    .from(supabaseBucket)
+    .from(SUPABASE_BUCKET)
     .upload(fileName, file);
   if (error) throw error;
   const { data, error: urlError } = supabaseClient.storage
-    .from(supabaseBucket)
+    .from(SUPABASE_BUCKET)
     .getPublicUrl(fileName);
   if (urlError) throw urlError;
   return data.publicUrl;
